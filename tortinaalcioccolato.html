@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricetta di Cucina - Torta al Cioccolato</title>  <link rel="icon" type="image/x-icon" href="availability-svgrepo-com.svg">
+    
+</head>
+<body>
+
+<header>
+    <h1>Torta al Cioccolato</h1>
+</header>
+
+<div class="container">
+    <img src="/tortacioccolato.jpg" alt="Torta al Cioccolato" style="width: 100%; max-width: 600px;">
+    <table class="recipe-table" border="1">
+        <tr>
+            <th>Difficoltà</th>
+            <th>Costo</th>
+            <th>Tempo di realizzazione</th>
+        </tr>
+        <tr>
+            <td>Media</td>
+            <td>Economico</td>
+            <td>60 minuti</td>
+        </tr>
+    </table>
+    <h3>Ingredienti</h3>
+    <ul class="ingredients-list">
+        <li>200 g di farina</li>
+        <li>200 g di zucchero</li>
+        <li>100 g di cioccolato fondente</li>
+        <li>2 uova</li>
+        <li>150 ml di latte</li>
+        <li>1 bustina di lievito per dolci</li>
+        <li>50 g di burro</li>
+        <li>Un pizzico di sale</li>
+    </ul>
+    <h3>Istruzioni</h3>
+    <p>Per preparare la torta al cioccolato, sciogli il cioccolato fondente a bagnomaria insieme al burro. In una ciotola capiente, sbatti le uova con lo zucchero fino a ottenere un composto soffice. Aggiungi il cioccolato fuso, il latte, e mescola bene. Setaccia la farina, il lievito e il sale, quindi uniscili al composto liquido. Versa l'impasto in una teglia imburrata e infarinata e cuoci in forno preriscaldato a 180°C per circa 30-40 minuti. Lascia raffreddare prima di servire.</p>
+    <p>Per la ricetta completa, visita il sito <a href="https://www.example.com/ricetta-originale" target="_blank">questa pagina</a>.</p>
+    <div class="form-container">
+        <h3>Lascia il tuo feedback</h3>
+        <form action="submit_feedback.php" method="POST">
+            <label for="email">Indirizzo email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="consenso">Acconsento al trattamento dei dati personali:</label>
+            <input type="checkbox" id="consenso" name="consenso" required> Accetto
+
+            <label for="gradimento">Livello di gradimento:</label>
+            <select id="gradimento" name="gradimento" multiple>
+                <option value="ottimo">Ottimo</option>
+                <option value="buono">Buono</option>
+                <option value="sufficiente">Sufficiente</option>
+                <option value="scarso">Scarso</option>
+            </select>
+
+            <input type="submit" value="Invia">
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
