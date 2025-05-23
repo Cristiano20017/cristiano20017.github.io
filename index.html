@@ -1,101 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {margin:0;}
-.navbar {
-  overflow: hidden;
-  background-color: orange;
-}
+  <meta charset="UTF-8">
+  <title>Menu di Navigazione</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+    }
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+    .navbar {
+      background: linear-gradient(to right, #ff8c00, #ffa500);
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-.home {
-  float: left;
-  overflow: hidden;
-}
+    .navbar a, .dropbtn {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
 
-.home .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
+    .dropbtn {
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
 
-.navbar a:hover, .home:hover .dropbtn {
-  background-color: red;
-}
+    .navbar a:hover, .home:hover .dropbtn {
+      background-color: #e65100;
+    }
 
-.home-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+    .home {
+      float: left;
+      position: relative;
+    }
 
-.home-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+    .home-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 4px;
+      overflow: hidden;
+    }
 
-.home-content a:hover {
-  background-color: #ddd;
-}
+    .home-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      transition: background 0.3s;
+    }
 
-.home:hover .home-content {
-  display: block;
-}
-}
-</style>
+    .home-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .home:hover .home-content {
+      display: block;
+    }
+
+    .content {
+      padding: 40px;
+      margin-top: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      min-height: 500px;
+    }
+  </style>
 </head>
 <body>
- 
-   <div class="navbar">
-   <div class="home">
-    <button class="dropbtn">Lavori
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="home-content">
-       <a href="intestazione.html">Intestazioni e paragrafi</a>
-      <a href="paragrafi.html">paragrafi</a> 
-      <a href="NuoviTag.html">tag</a>
-      <a href="AltriTag.html">liste</a>
-<a href="TabellaVoti.html">Tabella voti</a>
-<a href="Compito.html">compito foto centrata</a>
-<a href="registrazione.html">registrazione</a>
-<a href="tortinaalcioccolato.html">torta al cioccolato</a>
-<a href="TabellaCSS.html">tabella grigio e bianco</a>
-<a href="Portale.html">portale css</a>
-<a href="PortaleVideo.html">portale con video</a>
-<a href="Icone.html">favicon</a>
-<a href="BarraMenu.html">barra menu</a>
-<a href="Bootstrap.html">bootstrap</a>
-<a href="Modal.html">modali</a>
-    </div>
-   </div> <div class="home">
-      <button class="dropbtn">Cristiano Maio </button>
-    </div>
-   </div>
 
-<div style="padding:20px;margin-top:30px;background-color:white;height:1500px;">
-   
+  <div class="navbar">
+    <div class="home">
+      <button class="dropbtn">Lavori <i class="fa fa-caret-down"></i></button>
+      <div class="home-content">
+        <a href="intestazione.html"><i class="fa fa-header"></i> Intestazioni e paragrafi</a>
+        <a href="paragrafi.html"><i class="fa fa-paragraph"></i> Paragrafi</a>
+        <a href="NuoviTag.html"><i class="fa fa-tags"></i> Tag</a>
+        <a href="AltriTag.html"><i class="fa fa-list-ul"></i> Liste</a>
+        <a href="TabellaVoti.html"><i class="fa fa-table"></i> Tabella voti</a>
+        <a href="Compito.html"><i class="fa fa-camera"></i> Compito foto centrata</a>
+        <a href="registrazione.html"><i class="fa fa-user-plus"></i> Registrazione</a>
+        <a href="tortinaalcioccolato.html"><i class="fa fa-birthday-cake"></i> Torta al cioccolato</a>
+        <a href="TabellaCSS.html"><i class="fa fa-th"></i> Tabella grigio e bianco</a>
+        <a href="Portale.html"><i class="fa fa-globe"></i> Portale CSS</a>
+        <a href="PortaleVideo.html"><i class="fa fa-video-camera"></i> Portale con video</a>
+        <a href="Icone.html"><i class="fa fa-star"></i> Favicon</a>
+        <a href="BarraMenu.html"><i class="fa fa-bars"></i> Barra menu</a>
+        <a href="Bootstrap.html"><i class="fa fa-css3"></i> Bootstrap</a>
+        <a href="Modal.html"><i class="fa fa-window-restore"></i> Modali</a>
+      </div>
+    </div>
 
-<div style="padding:20px;margin-top:30px;background-color:white;height:1500px;">
+    <div class="home">
+      <button class="dropbtn"><i class="fa fa-user"></i> Cristiano Maio</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <!-- Contenuto principale della pagina -->
+    <h1>Benvenuto!</h1>
+    <p>Questa è un'area di contenuto. Puoi personalizzarla con le tue informazioni.</p>
+  </div>
+
+</body>
+</html>
